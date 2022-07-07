@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="grid-container">
+    <nav class="navbar">
+        Nav
+    </nav>
+
+    <header class="header">
+        <h1>
+            Password Generator
+        </h1>
+
+        <h2>
+            A strong password is more important than you know!
+        </h2>
+    </header>
+
+    <main class="main">
+
+        <form action="submit" id="form">
+            <label for="password" class="input-label">
+                Password
+                <input type="text" id="password" name="password" placeholder="password">
+            </label>
+
+            <label for="passwordSize">
+                Size
+                <input type="number" name="passwordSize" id="passwordSize" class="input" min="0" max="20">
+            </label>
+
+            <label for="uppercaseLetters" class="input-label">
+                Include uppercase letters
+                <input type="checkbox" name="uppercaseLetters" class="input" id="uppercaseLetters">
+            </label>
+
+            <button class="button">
+                Copy to clipboard
+            </button>
+
+            <label for="lowercaseLetters" class="input-label">
+                Include lowercase letters
+                <input type="checkbox" name="lowercaseLetters" class="input" id="lowercaseLetters">
+            </label>
+
+            <label for="numbers" class="input-label">
+                Include numbers
+                <input type="checkbox" name="numbers" class="input" id="numbers">
+            </label>
+
+            <label for="symbols" class="input-label">
+                Include symbols
+                <input type="checkbox" name="symbols" class="input" id="symbols">
+            </label>
+
+
+            <button type="submit" class="button submit">Generate Password</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>
+            Designed by Renato Baeta based on 
+            <a href="https://github.com/florinpop17/app-ideas">app-ideas</a>
+            repository by florinpop17
+        </p>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./zxcvbn.js"></script>
+</body>
+</html>
