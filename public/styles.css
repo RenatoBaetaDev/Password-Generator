@@ -33,16 +33,33 @@ input, button, textarea, select {
     background-color: rgb(233, 232, 232);
 }
 
-.main {
-    background-color: rgb(233, 232, 232);
-}
-
 .footer {
     align-self: end;
     background-color: lightgrey;
     box-shadow: 0px -1px 3px rgb(139, 139, 139);
 }
 
-#form {
+.main {
+    background-color: rgb(233, 232, 232);
     display: grid;
+    place-items: center;
+}
+
+#form {
+    height: min(80%, 500px);
+    width: min(85vw, 800px);
+    display: grid;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgb(139, 139, 139);
+    padding: 20px;
+    place-items: center;
+}
+
+.button {
+    border-radius: 10px;
+    width: min(100%, 250px);
+}
+
+.input-label {
+    /* display: flex; */
 }
